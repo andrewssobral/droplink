@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "DropLink — Share Tabs Instantly",
+  "version": "1.0.0",
+  "description": "Share the current tab to a channel and receive instant notifications everywhere else.",
+  "permissions": [
+    "storage",
+    "notifications",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*",
+    "ws://*/*",
+    "wss://*/*"
+  ],
+  "action": {
+    "default_title": "DropLink",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "icons": {
+    "128": "icon-128.png"
+  }
+}

@@ -1,0 +1,8 @@
+_*
+._*
+server/.env
+server/node_modules/
+server/package-lock.json
+server/npm-debug.log*
+npm-debug.log*
+.DS_Store

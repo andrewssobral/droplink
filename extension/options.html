@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DropLink Options</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 20px; max-width: 640px; }
+    label { display:block; margin-top: 12px; font-size: 13px; color:#444; }
+    input { width:100%; padding:10px; margin-top:6px; }
+    button { margin-top: 16px; padding: 10px 14px; }
+  </style>
+</head>
+<body>
+  <h2>DropLink Settings</h2>
+  <label>Channel</label>
+  <input id="channel" placeholder="e.g., team" />
+  <label>Your name</label>
+  <input id="name" placeholder="e.g., Bob" />
+  <label>Server URL</label>
+  <input id="serverUrl" placeholder="http://localhost:8080" />
+  <button id="save">Save</button>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
