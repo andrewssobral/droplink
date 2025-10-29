@@ -62,7 +62,7 @@ wss.on('connection', (socket, req) => {
     socket.close(1008, 'channel required');
     return;
   }
-  console.log(`WebSocket client connected on channel "${channel}"`);
+  // console.log(`WebSocket client connected on channel "${channel}"`);
   const ch = getOrCreateChannel(channel);
   ch.clients.add(socket);
 
@@ -70,7 +70,7 @@ wss.on('connection', (socket, req) => {
 
   socket.on('close', () => {
     ch.clients.delete(socket);
-    console.log(`WebSocket client disconnected from channel "${channel}"`);
+    // console.log(`WebSocket client disconnected from channel "${channel}"`);
   });
 
   socket.on('error', (err) => {
